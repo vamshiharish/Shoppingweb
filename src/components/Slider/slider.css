@@ -1,11 +1,3 @@
-/* .carousel {
-    position: relative;
-    width: 97vw;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 20px;
-  } */
-  
   .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;

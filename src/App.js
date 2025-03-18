@@ -50,13 +50,20 @@ function App() {
     }
   };
 
+  const cartCount = cart.length;
+
   return (
     <div className="App">
       <Navbar
-        cartCount={cart.reduce((total, item) => total + item.count, 0)}
+        cartCount={cartCount}
         wishlistCount={wishlist.length}
         openCartModal={() => setIsCartOpen(true)}
         openWishlistModal={() => setIsWishlistOpen(true)}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        toggleWishlist={toggleWishlist}
+        cart={cart}
+        wishlist={wishlist}
       />
       <Carousel />
       <Product
@@ -74,7 +81,7 @@ function App() {
         <Wishlist wishlist={wishlist} closeWishlist={() => setIsWishlistOpen(false)} />
       )}
       <Newsletter />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

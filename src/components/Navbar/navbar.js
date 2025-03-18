@@ -3,11 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faHeart, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 import "./navbar.css";
 import logo from "../images/logo.png";
+import ProductDetailsModalIteam from "../ProductdetailmodalItem/productdetailmodalitem";
 
-function Navbar({ cartCount, wishlistCount, openCartModal, openWishlistModal }) {
+// console.log(ProductDetailsModal);
+
+function Navbar({ cartCount, wishlistCount, openCartModal, openWishlistModal, addToCart, removeFromCart, toggleWishlist, cart, wishlist }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [products, setProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -21,8 +25,16 @@ function Navbar({ cartCount, wishlistCount, openCartModal, openWishlistModal }) 
     setFilteredProducts(
       products.filter((product) =>
         product.title.toLowerCase().includes(term.toLowerCase())
-      )
+      ) 
     );
+  };
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product); 
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null); 
   };
 
   return (
@@ -46,7 +58,7 @@ function Navbar({ cartCount, wishlistCount, openCartModal, openWishlistModal }) 
           <ol className="search-results">
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
-                <li key={product.id} className="search-item">
+                <li key={product.id} className="search-item" onClick={() => handleProductClick(product)}>
                   {product.title}
                 </li>
               ))
@@ -73,6 +85,18 @@ function Navbar({ cartCount, wishlistCount, openCartModal, openWishlistModal }) 
           <span>Cart</span>
         </div>
       </div>
+
+      {selectedProduct && (
+        <ProductDetailsModalIteam
+          product={selectedProduct}
+          closeModal={closeModal}
+          addToCart={addToCart}
+          removeFromCart={removeFromCart}
+          toggleWishlist={toggleWishlist}
+          cart={cart}
+          wishlist={wishlist}
+        />
+      )}
     </nav>
   );
 }

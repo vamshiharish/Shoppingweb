@@ -10,16 +10,6 @@
     align-items: center;
   }
   
-  /* .wishlist-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 500px;
-    max-height: 80%;
-    overflow-y: auto;
-  } */
-  
   .wishlist-item {
     display: flex;
     align-items: center;
@@ -58,7 +48,6 @@
   }
 
 
-  /* whishlist.css */
 .wishlist-content {
   background-color: white;
   padding: 20px;
@@ -69,7 +58,6 @@
   overflow-y: auto;
 }
 
-/* Media Queries for Wishlist */
 @media (max-width: 768px) {
   .wishlist-content {
     width: 90%;

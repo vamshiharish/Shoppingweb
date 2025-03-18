@@ -5,7 +5,6 @@ import { faHeart, faHeartPulse, faTrash } from '@fortawesome/free-solid-svg-icon
 
 const Product = ({ cart, addToCart, removeFromCart, wishlist, toggleWishlist, increaseCount }) => {
   const [products, setProducts] = useState([]);
-  console.log(products);
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
