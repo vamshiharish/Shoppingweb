@@ -40,9 +40,9 @@ const Product = ({ cart, addToCart, removeFromCart, wishlist, toggleWishlist, in
               {cart.some((item) => item.id === product.id) ? (
                 <div>
                   <div className='remove-div'>
-                    <div onClick={() => removeFromCart(product.id)}><FontAwesomeIcon icon={faTrash} /></div>
+                    <div  className='plus-count' onClick={() => removeFromCart(product.id)}><FontAwesomeIcon icon={faTrash} /></div>
                     <div>{cart.find((item) => item.id === product.id).count}</div>
-                    <div onClick={() => increaseCount(product.id)}>+</div>
+                    <div className='plus-count' onClick={() => increaseCount(product.id)}>+</div>
                   </div>
                   <div>
                     <p style={{color: "green"}}>Added to cart</p>

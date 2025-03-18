@@ -89,7 +89,7 @@
   background-color: #eb9a0b;
     color: white;
     border: none;
-    padding: 10px 16px;
+    padding: 5px 16px;
     border-radius: 4px;
     cursor: pointer;
     width: 90%;
@@ -113,6 +113,17 @@
   border: 1px solid #1db6cd !important;
   width: 100px;
   margin-right: 50px;
+}
+
+.plus-count{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  color: #1db6cd;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
