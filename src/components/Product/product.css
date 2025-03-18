@@ -1,0 +1,131 @@
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .product-card h3 {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .product-card button {
+    background-color: #eb9a0b;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width:90%;
+    font-size: 16px;
+  }
+  
+  .product-card button:hover {
+    background-color: #c7820a;
+  }
+  
+  .cart {
+    margin-top: 40px;
+  }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .cart-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover {
+    background-color: #c82333;
+  }
+
+  .whishlist-icon-top {
+    display: flex;
+    justify-content: end;
+}
+
+.product-title-name{
+  text-align: left;
+}
+
+.product-title-price{
+  text-align: left;
+  color: #33a3de !important;
+}
+
+.remove-div{
+  background-color: #eb9a0b;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.heading-spcl{
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 13px !important;
+}
+
+.horizantal-line-div {
+  display: flex;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.horizantal-line-div span {
+  border: 1px solid #1db6cd !important;
+  width: 100px;
+  margin-right: 50px;
+}

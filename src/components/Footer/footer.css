@@ -1,0 +1,143 @@
+.footer {
+    color: white;
+    padding: 40px 0px 20px 0px;
+    font-family: Arial, sans-serif;
+    position: unset;
+    margin: 0px;
+    width:100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #beb2b2;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f39c12; 
+    text-align: left;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4b5256; 
+    text-align: left;
+  }
+
+  .footer-para{
+    margin: 25px;
+    font-size: 14px;
+    color: #4b5256;
+  }
+  .foot{
+    width:240px;
+    margin-right: 90px;
+  }
+
+  .footer-section ul li:hover {
+    color: #f39c12;
+    cursor: pointer;
+  }
+  
+ 
+  .app-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-link {
+    margin-bottom: 10px;
+  }
+  
+  .app-link strong {
+    font-size: 16px;
+    color: #f39c12; 
+  }
+  
+  .app-link span {
+    font-size: 14px;
+    color: #bdc3c7;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 12px auto;
+    font-size: 14px;
+    color: #bdc3c7; 
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .social-icon-div {
+    display: flex;
+    gap: 15px;
+  }
+  .social-icons span {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .social-icons span:hover {
+    color: #f39c12;
+  }
+
+  .download-icon{
+    width:30px;
+    height:30px;
+    padding: 5px;
+  }
+  .download-icons{
+    width:40px;
+    height:40px;
+  }
+
+  .download-div {
+    background: #000000;
+    margin: 10px;
+    padding: 2px;
+    width: 135px;
+    border-radius: 8px;
+}
+
+a.download-link {
+  display: flex;
+
+}
+
+.down-text{
+  font-size: 11px;
+  color: #fff;
+}
+
+.down-store{
+  font-size: 15px;
+  color: #fff;
+}
+
+.download-app {
+  display: flex;
+}
+.download-text {
+  text-align: left;
+}
