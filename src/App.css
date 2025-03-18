@@ -16,7 +16,26 @@ main {
 footer {
   background-color: #f0f0f0;
   padding: 10px;
-  position: fixed;
-  bottom: 0;
+  position: relative; 
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    padding: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 5px;
+  }
+
+  main {
+    padding: 5px;
+  }
 }

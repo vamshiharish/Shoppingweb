@@ -10,7 +10,7 @@
     align-items: center;
   }
   
-  .wishlist-content {
+  /* .wishlist-content {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -18,7 +18,7 @@
     max-width: 500px;
     max-height: 80%;
     overflow-y: auto;
-  }
+  } */
   
   .wishlist-item {
     display: flex;
@@ -56,3 +56,32 @@
   button:hover {
     background-color: #0056b3;
   }
+
+
+  /* whishlist.css */
+.wishlist-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+/* Media Queries for Wishlist */
+@media (max-width: 768px) {
+  .wishlist-content {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .wishlist-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wishlist-item img {
+    margin-bottom: 10px;
+  }
+}

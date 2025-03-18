@@ -7,13 +7,13 @@
     width:100%;
   }
   
-  .footer-content {
+  /* .footer-content {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding-bottom: 20px;
     border-bottom: 1px solid #beb2b2;
-  }
+  } */
   
   .footer-section {
     flex: 1;
@@ -140,4 +140,44 @@ a.download-link {
 }
 .download-text {
   text-align: left;
+}
+
+
+
+/* footer.css */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #beb2b2;
+}
+
+/* Media Queries for Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .download-app {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
 }
